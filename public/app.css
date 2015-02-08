@@ -1,0 +1,30 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	padding: 2em;
+}
+
+input[type="text"] {
+	font-size: 1em;
+	padding: 0.5em;
+	border: 1px solid #aaa;
+}
+
+ul.todo {
+	list-style: none;
+	margin: 2em 0 2em 0;
+	padding: 0 0 0 1.5em;
+}
+ul.todo li {
+	list-style: none;
+}
+ul.todo li .toggle {
+	margin-right: 1em;
+}
+button.destroy {
+	font-size: 0.7em;
+	background-color: #b00;
+	color: #fff;
+	border: none;
+	border-radius: 0.3em;
+	margin-left: 1em;
+}

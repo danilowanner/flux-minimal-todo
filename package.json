@@ -1,0 +1,33 @@
+{
+  "name": "flux-minimal-todo",
+  "version": "0.1.0",
+  "description": "Minimal Todo App using React and Flux",
+  "main": "js/app.js",
+  "private": true,
+  "dependencies": {
+    "react": "~0.12.2",
+    "flux": "^2.0.1",
+    "express": "4.10.1",
+    "keymirror": "~0.1.0",
+    "object-assign": "^1.0.0",
+    "express-state": "latest"
+  },
+  "devDependencies": {
+    "browserify": "6.2.0",
+    "envify": "^3.0.0",
+    "reactify": "^0.15.2"
+  },
+  "scripts": {
+    "build": "browserify js/app.js --standalone Application --debug --outfile public/app.js",
+    "start": "node server",
+    "web": "npm run build && npm start"
+  },
+  "browserify": {
+    "transform": [
+      "reactify",
+      "envify"
+    ]
+  },
+  "author": "Danilo Wanner",
+  "license": "MIT"
+}
